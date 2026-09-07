@@ -126,6 +126,26 @@
             font-weight: normal;
             font-style: normal;
         }
+        /* PC와 모바일 분기 설정 */
+        .mobile-only {
+            display: none !important;
+        }
+        .pc-only {
+            display: block !important;
+        }
+
+        /* 모바일 화면에서만 적용되는 설정 (단어 단위 줄바꿈 활성화) */
+        @media (max-width: 768px) {
+            body {
+                word-break: break-all; /* 모바일에서만 단어 단위로 줄바꿈 강제 적용 */
+            }
+            .pc-only {
+                display: none !important;
+            }
+            .mobile-only {
+                display: block !important;
+            }
+        }
     </style>
 </head>
 <body>
