@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주황빛 독서논술 교습소</title>
+    <!-- 고급스러운 무료 웹 폰트(프리텐다드) 적용 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <style>
+        /* 전체 기본 스타일 */
+        body {
+            font-family: 'Pretendard', sans-serif; /* 세련된 폰트 */
+            margin: 0;
+            padding: 0;
+            color: #2c3e50;
+            line-height: 1.7;
+            background-color: #f8f9fa; /* 아주 밝은 회색 배경으로 눈을 편안하게 */
+        }
+
+        /* 상단 메뉴바 (세련된 그라데이션) */
+        header {
+            background: linear-gradient(135deg, #FF7F50, #FFA07A); 
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 15px rgba(255, 127, 80, 0.2);
+        }
+        header h1 { 
+            margin: 0 0 15px 0; 
+            font-size: 2.2em; 
+            font-weight: 800;
+        }
+        nav {
+            background: rgba(255, 255, 255, 0.1);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 30px;
+        }
+        nav a {
+            color: white;
+            margin: 0 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.05em;
+            transition: 0.3s;
+        }
+        nav a:hover { color: #ffe4c4; }
+
+        /* 각 구역(섹션) 설정 */
+        section {
+            padding: 70px 20px;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        /* 소제목 스타일 */
+        h2 {
+            color: #FF7F50;
+            font-size: 1.8em;
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        h2::after { /* 소제목 아래 귀여운 주황색 점 */
+            content: '';
+            display: block;
+            width: 40px;
+            height: 4px;
+            background-color: #FF7F50;
+            margin: 15px auto 0;
+            border-radius: 2px;
+        }
+
+        /* 내용 강조 박스 (부드러운 그림자와 둥근 모서리) */
+        .card {
+            background: #ffffff;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 15px; /* 모서리를 둥글게 */
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05); /* 은은한 그림자 */
+            border-left: 6px solid #FF7F50;
+            transition: transform 0.3s ease; /* 마우스 올렸을 때 애니메이션 */
+        }
+        .card:hover {
+            transform: translateY(-5px); /* 마우스 올리면 살짝 위로 떠오름 */
+        }
+        .card h3 {
+            margin-top: 0;
+            color: #e66b3d;
+            font-size: 1.3em;
+        }
+
+        /* 상담 버튼 스타일 (입체감 추가) */
+        .contact-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #FF7F50, #ff6347);
+            color: white;
+            padding: 18px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.3em;
+            text-align: center;
+            box-shadow: 0 8px 15px rgba(255, 127, 80, 0.3);
+            transition: all 0.3s ease;
+        }
+        .contact-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 20px rgba(255, 127, 80, 0.4);
+        }
+
+        /* 하단 카피라이트 */
+        footer {
+            background-color: #2c3e50;
+            text-align: center;
+            padding: 30px 0;
+            color: #bdc3c7;
+            font-size: 0.9em;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 상단 메뉴 -->
+    <header>
+        <h1>한우리 독서토론논술</h1>
+        <nav>
+            <a href="#about">교습소 소개</a>
+            <a href="#curriculum">커리큘럼</a>
+            <a href="#reviews">수강 후기</a>
+            <a href="#info">운영 안내</a>
+            <a href="#contact">상담 문의</a>
+        </nav>
+    </header>
+
+    <!-- 1. 교습소 및 강사 소개 -->
+    <section id="about">
+        <h2>교습소 및 원장 소개</h2>
+        <div class="card">
+            <h3>"생각하는 힘이 아이의 미래를 바꿉니다"</h3>
+            <p><strong>원장 이해옥</strong></p>
+            <ul>
+                <li>독서토론논술 교습소 운영 (10년 경력)</li>
+                <li>해법,한우리 독서토론교습소 운영</li>
+                <li>독서지도사 자격 보유</li>
+            </ul>
+            <p style="color: #666;">단순히 책을 읽고 글을 쓰는 것을 넘어, 아이들이 스스로 생각하고 질문하는 힘을 길러주는 것을 교육 철학으로 삼고 있습니다.</p>
+        </div>
+    </section>
+
+    <!-- 2. 커리큘럼 및 수업 방식 -->
+    <section id="curriculum">
+        <h2>커리큘럼 및 수업 방식</h2>
+        <div class="card">
+            <h3>초등부 (저학년/고학년)</h3>
+            <p>그림책과 문학 작품을 통한 흥미 위주의 독서. 주 1회 주제별 글쓰기 및 자유 토론 진행 (소수 정예 4명)</p>
+        </div>
+        <div class="card">
+            <h3>중등부 (내신 및 심화)</h3>
+            <p>비문학 읽기 및 신문 칼럼 분석. 서술형 평가 대비 및 중등 내신 연계형 심화 논술 작성</p>
+        </div>
+    </section>
+
+    <!-- 3. 수강 후기 및 성과 -->
+    <section id="reviews">
+        <h2>수강 후기 및 성과</h2>
+        <div class="card">
+            <p><strong>"글쓰기를 싫어하던 아이가 달라졌어요" - 초4 OOO 학생 학부모님</strong></p>
+            <p style="color: #666;">매번 일기 쓰기조차 힘들어하던 아이였는데, 학원에서 배운 구조화 스킬 덕분에 이제는 학교 독후감 숙제도 스스로 해냅니다.</p>
+        </div>
+        <div class="card">
+            <p><strong>"중학교 서술형 만점!" - 중2 OOO 학생</strong></p>
+            <p style="color: #666;">비문학 지문 요약 훈련을 꾸준히 한 결과, 국어뿐만 아니라 사회, 역사 과목 서술형 평가에서도 좋은 성적을 받았습니다.</p>
+        </div>
+    </section>
+
+    <!-- 4. 운영 안내 및 오시는 길 -->
+    <section id="info">
+        <h2>운영 안내 및 오시는 길</h2>
+        <ul style="line-height: 2;">
+            <li><strong>운영 시간:</strong> 평일 14:00 ~ 20:00 (주말 및 공휴일 휴무)</li>
+            <li><strong>주소:</strong> 서울특별시 OO구 OO동 OO빌딩 2층</li>
+            <li><strong>주차 정보:</strong> 건물 뒷편 학부모 전용 주차장(1시간 무료) 이용 가능</li>
+        </ul>
+
+        <!-- 카카오 지도 시작 (모양을 잡아주는 박스) -->
+        <div style="width: 100%; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); margin-top: 20px;">
+            
+            <!-- 1. 지도 노드 -->
+            <div id="daumRoughmapContainer1788803690193" class="root_daum_roughmap root_daum_roughmap_landing" style="width: 100% !important;"></div>
+
+            <!-- 2. 설치 스크립트 -->
+            <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+            <!-- 3. 실행 스크립트 -->
+            <script charset="UTF-8">
+                new daum.roughmap.Lander({
+                    "timestamp" : "1788803690193",
+                    "key" : "2ihvyw7i9ytd",
+                    "mapWidth" : "100%",
+                    "mapHeight" : "400"
+                }).render();
+            </script>
+
+        </div>
+        <!-- 카카오 지도 끝 -->
+    </section>
+
+    <!-- 5. 상담 문의 -->
+    <section id="contact" style="text-align: center;">
+        <h2>상담 문의</h2>
+        <p style="margin-bottom: 30px; font-size: 1.1em; color: #555;">우리 아이에게 딱 맞는 독서 논술 교육, 지금 바로 상담받아보세요!</p>
+        <!-- 카카오톡 채널 링크를 아래 href="..." 안에 넣으시면 됩니다 -->
+        <a href="http://pf.kakao.com/_xxxxxx" target="_blank" class="contact-btn">
+            💬 카카오톡 1:1 상담하기
+        </a>
+    </section>
+
+    <!-- 하단 -->
+    <footer>
+        <p>© 2026 한우리 독서토론논술 파주운정 산내푸르지오독서교실. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
